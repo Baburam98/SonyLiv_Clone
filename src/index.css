@@ -1,0 +1,335 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* NavBar*/
+
+.nav-link{
+  margin-left: 15px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(165, 164, 164);
+}
+
+a:hover{
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-flexbox;
+}
+
+.imgSize {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.drop {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+
+}
+
+.dropdown-content {
+  margin-top: 2px;
+  display: none;
+  position: absolute;
+  background-color: #4e4e4e;
+  opacity: 0.8;
+  color: white;
+  right: -10px;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropLink {
+  color: whitesmoke !important;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropLink:hover {
+  background: #c3c3c3;
+  color: #000 !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.imgSize {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.icons{
+  margin: 10px;
+}
+
+.content{
+   color: whitesmoke; 
+}
+
+.user-pic {
+  width: 30px;
+}
+
+#head{
+  display: inline;
+}
+
+/*Pagination*/
+
+#showBtn{
+  background-color:white;
+  color:black;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.align-btn {
+    text-align: center !important;
+}
+
+/* Landscape image*/
+
+.landscape {
+  height: 200px;
+  width: 320px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.landscape:hover{
+  transform: scale(1.05);
+}
+
+.main{
+  overflow: hidden;
+}
+
+/* Slider */
+
+.slides{
+  position: relative;
+}
+
+.slick-slide div {
+  outline: none;
+ }
+
+.slick-prev{
+  left: 2% !important;
+  z-index: 1;
+}
+
+.slick-next{
+  right: 2% !important;
+  z-index: 1;
+}
+
+.slides .slick-dots{
+  position: absolute;
+  bottom: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* objects */
+
+.row__poster{
+  object-fit: contain;
+  width: 100%;
+  max-height: 250px;
+  margin-right: 10px;
+  transition: transform 450ms;
+  cursor: pointer;
+}
+
+.row__posters{
+  display:flex;
+  padding: 10px;
+}
+
+.row__poster:hover{
+  transform: scale(1.08);
+}
+
+/* Scroll Bar*/
+
+html::-webkit-scrollbar {
+  width: 5px; 
+}
+
+html::-webkit-scrollbar-track {
+background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+background: #4e4e4e;
+border-radius: 25px;
+}
+
+
+
+/* list */
+
+.list{
+  margin: 8px;
+}
+
+.list:hover{
+  transform: scale(1.05);
+}
+
+
+/*Details Component*/
+#img-details{
+  width: 45%;
+  height: 450px;
+  float: right;
+  margin: 5px;
+}
+
+#title{
+  display: inline;
+  color: white;
+  margin-left: 10px;
+}
+
+#para{
+  color: white;
+  margin-left: 10px;
+}
+
+#summary{
+  color: white;
+  margin-left: 10px;
+}
+
+.summary{
+  color: white;
+  margin-left: 10px;
+}
+
+.details{
+  margin-bottom: 70px;
+}
+
+.my-anchor-css-class{
+  text-decoration: none;
+  color: yellow;
+}
+
+.my-anchor-css-class:hover{
+  color: yellow;
+}
+
+/* Footer */
+
+.footer{
+  color: white;
+  margin: 10px;
+}
+
+#copy{
+  margin: 10px;
+  color: rgb(165, 164, 164);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  #showBtn{
+    width: 50%!important;
+  }
+  .landscape {
+    height: 100px!important;
+    width: 150px!important;
+    margin: 15px!important;
+    border-radius: 10px!important;
+  }
+  .list{
+    margin: 5px!important;
+    width: 30%;
+  }
+}
+
+ @media screen and (max-width: 800px) {
+  #img-details{
+    width: 97%;
+    height: 300px!important;
+  }
+  .details{
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #showBtn{
+    width: 50%;
+  }
+  .landscape {
+    height: 100px;
+    width: 200px;
+    margin: 25px;
+    border-radius: 10px;
+  }
+  .list{
+    margin-left: 13px;
+    width: 30%;
+  }
+}
+
+/* @media screen and (max-width: 1366px) {
+  .content-css{
+    width: 500px;
+  }
+} */
